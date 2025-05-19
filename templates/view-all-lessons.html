@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>StudyWise</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    </head>
+    <body>
+        <ul id="navbar">
+            <span id="navbar-left">
+                <a id="logo-a" href="/">
+                    <li id="logo">StudyWise</li>
+                </a>
+                <a href="/">Go Back</a>
+            </span>
+            <span id="navbar-right">
+                <!-- <a href="/register">
+                    <li>Register</li>
+                </a>
+                <a href="/login">
+                    <li>Log in</li>
+                </a> -->
+                <a href="https://github.com/numantepe/studywise/blob/master/README.md" target="_blank">
+                    <li>Help</li>
+                </a>
+                <a href="/settings">
+                    <li>Settings</li>
+                </a>
+                <li id="logout">Log out</li>
+            </span>
+        </ul>
+        <div id="logged-in-as"></div>
+        <div class="lesson-list-container">
+            <ul id="lesson-list-container-top">
+                <li><button type="button" class="btn btn-blue" id="add-new-lesson">Add New Lesson</button> 
+                    <input type="text" id="search-filter" placeholder="Search for course/topic..">
+                </li>
+                <li>
+                    <button type="button" class="btn btn-green" id="select-all-deselect-all">Select All</button> 
+                    <button type="button" class="btn btn-red" id="delete-all">Delete All</button>
+                </li>
+            </ul>
+            <p id="lesson-list-container-title">Lessons Catalogue</p>
+            <ul class="lesson-list">          
+            </ul>
+        </div>
+        <script src="/static/js/index.js"></script>
+        <script src="/static/js/loggedin.js"></script>
+        <script src="/static/js/logout.js"></script>
+    </body>
+</html>

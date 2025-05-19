@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>StudyWise</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    </head>
+    <body>
+        <ul id="navbar">
+            <span id="navbar-left">
+                <a id="logo-a" href="/">
+                    <li id="logo">StudyWise</li>
+                </a>
+                <a href="/">Go Back</a>
+            </span>
+            <span id="navbar-right">   
+                <!-- <a href="/register">
+                    <li>Register</li>
+                </a>
+                <a href="/login">
+                    <li>Log in</li>
+                </a> -->
+                <a href="https://github.com/numantepe/studywise/blob/master/README.md" target="_blank">
+                    <li>Help</li>
+                </a>
+                <a href="/setings">
+                    <li>Settings</li>
+                </a>
+                <li id="logout">Log out</li>
+            </span>
+        </ul>
+        <div class="form-container">
+            <form id="user-settings">
+                <h5>You can change your account info by editting any of the fields below and then clicking the update button.</h5>
+                <div class="msg"></div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                <div>
+                    <label for="passowrd">Password:</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <span id="show-passwords">
+                        Show Password
+                    </span>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <button type="button" class="btn btn-blue" id="form-submit">Update</button>
+                <div id="delete-account">Delete Account</a>
+            </form>
+        </div>
+        <script src="/static/js/index.js"></script>
+        <script src="/static/js/settings.js"></script>
+        <script src="/static/js/loggedin.js"></script> <!-- NEXT TIME DO index.js FOR BETTER ARCH-->
+        <script src="/static/js/logout.js"></script>
+    </body>
+</html>

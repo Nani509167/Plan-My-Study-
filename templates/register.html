@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>StudyWise</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    </head>
+    <body>
+        <ul id="navbar">
+            <span id="navbar-left">
+                <a id="logo-a" href="/login">
+                    <li id="logo">StudyWise</li>
+                </a>
+            </span>
+            <span id="navbar-right">
+                <a href="https://github.com/numantepe/studywise/blob/master/README.md" target="_blank">
+                    <li>Help</li>
+                </a>
+                <a href="/register">
+                    <li>Register</li>
+                </a>
+                <a href="/login">
+                    <li>Log in</li>
+                </a>
+                <!-- <li id="logout">Log out</li> -->
+            </span>
+        </ul>
+        <div class="form-container">
+            <form id="register-new-user">
+                <h1>Register New User</h1>
+                <div class="msg"></div>
+                <div>
+                    <label for="username">New Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <label for="password">Confirm Password:</label>
+                    <input type="password" id="confirm-password">
+                </div>
+                <div>
+                    <span id="show-passwords">
+                        Show Passwords
+                    </span>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-blue" id="form-submit">Submit</button>
+                </div>
+                <div id="tutorial">Check out this 
+                    <a href="https://github.com/numantepe/studywise/blob/master/README.md" target="_blank">
+                    tutorial</a> to make the best out of StudyWise!</div>
+           </form>
+        </div>
+        <script src="/static/js/index.js"></script>
+        <script src="/static/js/register.js"></script>
+   </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>StudyWise</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    </head>
+    <body>
+        <ul id="navbar">
+            <span id="navbar-left">
+                <a id="logo-a" href="/login">
+                    <li id="logo">StudyWise</li>
+                </a>
+            </span>
+            <span id="navbar-right">
+                <a href="https://github.com/numantepe/studywise/blob/master/README.md" target="_blank">
+                    <li>Help</li>
+                </a>
+                <a href="/register">
+                    <li>Register</li>
+                </a>
+                <a href="/login">
+                    <li>Log in</li>
+                </a>
+                <!-- <li id="logout">Log out</li> -->
+            </span>
+        </ul>
+        <div class="form-container">
+            <form id="login-existing-user">
+                <h1>Log in</h1>
+                <div class="msg"></div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div>
+                    <label for="passowrd">Password:</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <span id="show-passwords">
+                        Show Password
+                    </span>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <button type="button" class="btn btn-blue" id="form-submit">Submit</button>
+                <div id="new-to-studywise">New to StudyWise? Create a new account right <a href="/register">here</a>!</div>
+                <div id="forgot">Forgot your username or password? Click <a href="/forgot">here</a>.</div>
+            </form>
+        </div>
+        <script src="/static/js/index.js"></script>
+        <script src="/static/js/login.js"></script>
+   </body>
+</html>
