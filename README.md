@@ -20,7 +20,7 @@ https://studywise.herokuapp.com/register
 
 After you register to the website, you will meet with,
 
-![Alt text](/img/s1.png)
+
 
 To add a lesson, click the "Add New Lesson" button and enter the course name/code and the topic you have learned on that day. 
 
