@@ -1,5 +1,5 @@
 # studywise
-StudyWise - Your Smart Study/Review Schedule Creator App - Contact botemail597@gmail.com for any inquiries
+StudyWise - Your Smart Study/Review Schedule Creator App - 
 
 IMPORTANT NOTE: The Heroku link is currently not working as a result of Heroku not offering Fier Tier Hosting anymore. I will hopefully migrate my website to some other platform as soon as possible. In the meantime you can fork the code and run it on your local machine!
 
@@ -55,10 +55,5 @@ Bingo! When you clear "Physics" from the search bar, the physics lessons won't b
 
 That's all about it, now you know how to use StudyWise and there are no limits to how much you can accomplish and be successful!
 
-Please don't hesitate to email botemail597@gmail.com for any questions/feedback/help that you may have!
 
-Peace,
 
-Numan Yavuz Tepe
-
-2022
