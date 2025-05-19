@@ -1,5 +1,5 @@
-# studywise
-StudyWise - Your Smart Study/Review Schedule Creator App - 
+# Plan-My-Study
+Plan-My-Study - Your Smart Study/Review Schedule Creator App - 
 
 IMPORTANT NOTE: The Heroku link is currently not working as a result of Heroku not offering Fier Tier Hosting anymore. I will hopefully migrate my website to some other platform as soon as possible. In the meantime you can fork the code and run it on your local machine!
 
@@ -9,7 +9,7 @@ Would you like to get straight As in your courses at school and impress your fam
 
 If the answer is yes, then you've come to the right place!
 
-StudyWise is a website that systematically creates a daily review/study schedule 
+Plan-My-Study is a website that systematically creates a daily review/study schedule 
 using simple and yet effective scientifically proven methods from the book, A mind for Numbers, written by Barbara Oakley. 
 
 Using this website will significantly help you retain any information or material in the long term.
@@ -53,7 +53,7 @@ Bingo! When you clear "Physics" from the search bar, the physics lessons won't b
 
 ![Alt text](/img/s7.png)
 
-That's all about it, now you know how to use StudyWise and there are no limits to how much you can accomplish and be successful!
+That's all about it, now you know how to use Plan-My-Study and there are no limits to how much you can accomplish and be successful!
 
 
 
