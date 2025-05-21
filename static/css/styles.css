@@ -4,229 +4,143 @@
     box-sizing: border-box;
 }
 
-/* templates */
+body {
+    background-color: #f8f8f8;
+    color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .btn {
-    border-style: solid;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 3px;
-
-    font-size: 16px;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .btn-red {
-    background-color: #f44336;
-    color: #fff;
-    border-color: #f44336; 
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 .btn-red:hover {
-    background-color:#ae0000;
-    border-color:#ae0000;
-}
-
-.btn-red:active {
-    background-color: #f44336;
-    border-color: #f44336;
+    background-color: #ffffff;
+    color: #1a1a1a;
 }
 
 .btn-blue {
-    background-color: #48b4e0;
-    color: #fff;
-    border-color: #48b4e0; 
+    background-color: #ffffff;
+    color: #1a1a1a;
 }
 
 .btn-blue:hover {
-    background-color: #0876a1;
-    border-color:#0876a1;
-}
-
-.btn-blue:active {
-    background-color: #48b4e0;
-    border-color: #48b4e0;
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 .btn-green {
-    background-color: #32cd32;
-    color: #fff;
-    border-color: #32cd32; 
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
 .btn-green:hover {
-    background-color: #008000;
-    border-color: #008000;
-}
-
-.btn-green:active {
-    background-color: #32cd32;
-    border-color: #32cd32;
+    background-color: #ffffff;
+    color: #1a1a1a;
 }
 
 .btn-yellow {
-    background-color: #ffbf00;
-    color: #fff;
-    border-color: #ffbf00; 
+    background-color: #ffffff;
+    color: #1a1a1a;
 }
 
 .btn-yellow:hover {
-    background-color: #bf8d05;
-    border-color: #bf8d05;
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
-
-.btn-yellow:active {
-    background-color: #ffbf00;
-    border-color: #ffbf00;
-}
-
-/* Navbar */
 
 #navbar {
-    background-color: #48b4e0;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
     padding: 0 20%;
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 #navbar li {
-    display: inline-block;
-    height: 60px;
     display: inline-flex;
+    height: 60px;
     justify-content: center; 
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
 }
 
 #navbar li:hover {
-    background-color:#1e86b1;
+    background-color: #333333;
 }
 
 #navbar #navbar-left #logo-a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 #navbar #navbar-left #logo {
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 #navbar #navbar-right a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
-/* Logged in as "username" */
 #logged-in-as {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 22%;
     text-align: right;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #username-welcome {
-    color: #055574;
-    font-size: 19px;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
 }
-
-/* Lesson-List container */
 
 .lesson-list-container {
     width: 50%;
     margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
-.forgot {
-    width: 50%;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-/* .lesson-list {
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #22a0d2;
-    border-width: 1px;
-    border: none;
-}*/
-
-.lesson-list {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* List Container Top */
-
-#lesson-list-container-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#lesson-list-container-top li {
-    display: inline;
-}
-
-#add-new-lesson {
-    margin-right: 5px;
-}
-
-#search-filter {
-    font-size: 16px; 
-    padding: 0 10px; 
-}
-
-#select-all-deselect-all {
-    margin-right: 0;
-}
-
-/* Lesson-list-title */
-
-#lesson-list-container-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-/* Lesson List */
 
 .lesson {
     list-style: none;
-
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #7bd3f7;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #1a2475;
-
-    margin: 7px;
-
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 8px 0;
     display: flex;
     align-items: center;
-
-    padding: 3px;
+    padding: 12px;
+    transition: all 0.2s ease;
 }
 
 .lesson:hover {
-    background-color: #dbf0f9;
+    background-color: #f8f8f8;
+    border-color: #1a1a1a;
 }
 
-.lesson-list-container .btn-blue {
-    margin: 7px 0px;
-}
-
-.lesson .btn-red {
-    margin: 6px;
-}
- 
 .lesson .lesson-text {
     flex: 8;
 }
@@ -236,107 +150,114 @@
     margin-left: 15px;
 }
 
-.finish, .delay {
-    display: block;
-}
-
-/* Register - Login */
-
 .form-container {
-    font-family: Arial, Helvetica, sans-serif;
-    border-style: solid;
-    border-radius: 5px;
-
-    width: 33%;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 30px;
-
-    background-color: #f5f5f5;
-    border-color: #f5f5f5;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-h5 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #1a1a1a;
+    font-weight: 700;
 }
 
 form {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 label {
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 input:not(#checkbox, #search-filter) {
-    font-size: 20px;
-    display: block;
     width: 100%;
-    margin-bottom: 10px;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a1a1a;
+}
+
+#search-filter {
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 8px;
 }
 
 .msg {
-    margin-bottom: 10px;
-    color: #ff0000;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    font-size: 14px;
 }
 
 #show-passwords {
-    font-size: 16px;
-}
-
-#checkbox {
-    display: inline;
+    font-size: 14px;
+    color: #666666;
 }
 
 #form-submit {
-    display: block;
-    width: 33%;
-    margin: 0 auto;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 24px;
 }
 
-#new-to-studywise {
+#new-to-studywise, #forgot, #tutorial {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 24px;
+    text-align: center;
+    color: #666666;
 }
 
-/* Settings */
+#new-to-studywise a, #forgot a, #tutorial a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#new-to-studywise a:hover, #forgot a:hover, #tutorial a:hover {
+    text-decoration: underline;
+}
+
 #delete-account {
     display: block;
-    width: 33%;
-    margin: 0 auto;
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 40px;
     font-size: 14px;
     text-align: center;
-    color: #787878;
+    color: #666666;
+    text-decoration: none;
 }
 
 #delete-account:hover {
-    color: #ff0000;
+    color: #1a1a1a;
 }
 
-#delete-account:active {
-    color: #787878;
+#lesson-list-container-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 24px 0;
+    color: #1a1a1a;
 }
 
-/* Forgot */
-
-#botemail {
-    color: #055574;
-}
-
-#forgot {
-    font-size: 14px;
-    margin-top: 20px;
-}
-
-#tutorial {
-    font-size: 14px;
-    margin-top: 20px;
+.nothing {
+    text-align: center;
+    color: #666666;
+    padding: 40px 0;
+    font-size: 16px;
 }
