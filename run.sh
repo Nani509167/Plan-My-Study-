@@ -1,7 +1,13 @@
-#!/bin/zsh
+#!/bin/bash
+
+# Create virtual environment if it doesn't exist
+python3 -m venv venv
 
 # Activate the virtual environment
-source venv/bin/activate
+. venv/bin/activate
+
+# Install requirements
+pip install -r requirements.txt
 
 # Run the Flask application
-python3 -m flask run
+flask run
