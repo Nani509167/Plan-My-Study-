@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# Create virtual environment if it doesn't exist
+# Remove existing virtual environment if it exists
+rm -rf venv
+
+# Create fresh virtual environment
 python3 -m venv venv
 
 # Activate the virtual environment
-. venv/bin/activate
+source venv/bin/activate
 
-# Install requirements
+# Upgrade pip and install requirements
+pip install --upgrade pip
+pip install gunicorn
 pip install -r requirements.txt
 
 # Run the Flask application
